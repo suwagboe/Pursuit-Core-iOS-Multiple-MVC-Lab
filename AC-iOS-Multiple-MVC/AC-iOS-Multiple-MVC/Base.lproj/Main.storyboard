@@ -72,6 +72,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jxu-pA-W3u"/>
+                    <connections>
+                        <segue destination="Ogx-CB-u23" kind="show" id="8Wd-BY-7XS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,13 +87,34 @@
                     <view key="view" contentMode="scaleToFill" id="Yyj-q7-P8k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qX1-ny-JF6">
+                                <rect key="frame" x="40" y="128" width="334" height="333"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animal Details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yx6-nL-vGz">
+                                <rect key="frame" x="8" y="491" width="398" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bMz-ph-uFj" firstAttribute="trailing" secondItem="Yx6-nL-vGz" secondAttribute="trailing" constant="8" id="0qK-Rx-lqN"/>
+                            <constraint firstItem="bMz-ph-uFj" firstAttribute="trailing" secondItem="qX1-ny-JF6" secondAttribute="trailing" constant="40" id="5lR-yM-kCo"/>
+                            <constraint firstItem="bMz-ph-uFj" firstAttribute="bottom" secondItem="qX1-ny-JF6" secondAttribute="bottom" constant="401" id="Pyh-11-bMl"/>
+                            <constraint firstItem="qX1-ny-JF6" firstAttribute="top" secondItem="bMz-ph-uFj" secondAttribute="top" constant="40" id="Z9f-8P-X89"/>
+                            <constraint firstItem="qX1-ny-JF6" firstAttribute="leading" secondItem="bMz-ph-uFj" secondAttribute="leading" constant="40" id="dzI-g0-tUx"/>
+                            <constraint firstItem="Yx6-nL-vGz" firstAttribute="leading" secondItem="bMz-ph-uFj" secondAttribute="leading" constant="8" id="lQc-gM-imn"/>
+                            <constraint firstItem="Yx6-nL-vGz" firstAttribute="top" secondItem="qX1-ny-JF6" secondAttribute="bottom" constant="30" id="tPz-0l-OQA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bMz-ph-uFj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wSy-kJ-hWX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xB5-G3-V3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1787" y="104"/>
+            <point key="canvasLocation" x="1786.9565217391305" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qin-hQ-W8L">
