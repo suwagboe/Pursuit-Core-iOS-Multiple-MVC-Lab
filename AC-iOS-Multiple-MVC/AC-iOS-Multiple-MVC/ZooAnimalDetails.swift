@@ -11,6 +11,12 @@ import UIKit
 
 class ZooAnimalDetails: UIViewController {
 
+
+    @IBOutlet weak var ImageView: UIImageView!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

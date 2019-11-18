@@ -9,17 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    // convert to UITableView always before dragging in stuff
+    @IBOutlet weak var tableview: UITableView!
     
+    var specificAnimals = [[ZooAnimal]]() {
+        didSet {
+            // need this in order to react after the zooAnimals get the assignments.
+            tableview.reloadData() // adds the data into the table view
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // confroming to the datasource .. tells it to give access to tableview: let me do what I want to do regardless of what you think
+//        tableview.dataSource = self
+//        specificAnimals = ZooAnimal.get
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
 
 
 }

@@ -130,3 +130,4 @@ Zebras were the second species to diverge from the earliest proto-horses, after 
 }
 
 
+//var animalsImages

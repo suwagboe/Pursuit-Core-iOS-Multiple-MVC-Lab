@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C30CEDD238356AF002F788C /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30CEDC238356AF002F788C /* AnimalCell.swift */; };
 		3C55737D238342C800CA2A01 /* ZooAnimalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55737C238342C800CA2A01 /* ZooAnimalDetails.swift */; };
 		DE07F55F1FAB611300DA3ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */; };
 		DE07F5611FAB611300DA3ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07F5601FAB611300DA3ABA /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C30CEDC238356AF002F788C /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		3C55737C238342C800CA2A01 /* ZooAnimalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnimalDetails.swift; sourceTree = "<group>"; };
 		DE07F55B1FAB611300DA3ABA /* AC-iOS-Multiple-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC-iOS-Multiple-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DE07F5701FAB627600DA3ABA /* ZooAnimal.swift */,
+				3C30CEDC238356AF002F788C /* AnimalCell.swift */,
 				DE07F5621FAB611300DA3ABA /* Main.storyboard */,
 				DE07F5601FAB611300DA3ABA /* ViewController.swift */,
 				3C55737C238342C800CA2A01 /* ZooAnimalDetails.swift */,
@@ -144,6 +147,7 @@
 			files = (
 				DE07F5611FAB611300DA3ABA /* ViewController.swift in Sources */,
 				3C55737D238342C800CA2A01 /* ZooAnimalDetails.swift in Sources */,
+				3C30CEDD238356AF002F788C /* AnimalCell.swift in Sources */,
 				DE07F5711FAB627600DA3ABA /* ZooAnimal.swift in Sources */,
 				DE07F55F1FAB611300DA3ABA /* AppDelegate.swift in Sources */,
 			);
