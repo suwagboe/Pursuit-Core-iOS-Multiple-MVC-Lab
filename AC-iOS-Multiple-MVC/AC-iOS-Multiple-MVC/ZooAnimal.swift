@@ -130,34 +130,34 @@ Zebras were the second species to diverge from the earliest proto-horses, after 
     
     static func getData() -> [[ZooAnimal]] {
         // why is this entire thing needed in order to access the data inside???
-        
+
         // this orders the animals by the classification
-        let sortedAnimals = zooAnimals.sorted {$0.origin > $1.origin}
-        
+        let sortedAnimals = zooAnimals.sorted {$0.classification > $1.classification}
+
         // this ?? WHY!!!
-        let originTitles: Set<String> = Set(zooAnimals.map {$0.origin })
-        
+        let originTitles: Set<String> = Set(zooAnimals.map {$0.classification })
+
         //WHY!!!
         var originArr = Array(repeating: [ZooAnimal](), count: originTitles.count)
-        
+
         var currentIndex = 0
-        var currnetAnimal = sortedAnimals.first?.origin ?? "None" // mammal
+        var currnetAnimal = sortedAnimals.first?.classification ?? "None" // mammal
         for animal in sortedAnimals {
-            if animal.origin == currnetAnimal {
+            if animal.classification == currnetAnimal {
                 originArr[currentIndex].append(animal)
 
             } else {
                 currentIndex += 1
-                               currnetAnimal = animal.origin
+                               currnetAnimal = animal.classification
                                originArr[currentIndex].append(animal)
 
             }
         }
        return originArr
     }
-    
-    
-    
+
+
+
 }
 
 

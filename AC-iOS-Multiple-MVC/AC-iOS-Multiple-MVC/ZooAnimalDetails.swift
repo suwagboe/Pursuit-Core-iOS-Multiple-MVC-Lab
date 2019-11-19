@@ -13,15 +13,29 @@ class ZooAnimalDetails: UIViewController {
 
 
     @IBOutlet weak var ImageView: UIImageView!
-    
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textView: UITextView!
+    
+    var animal: ZooAnimal?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+UpdateUI()
     }
     
+    
+    func UpdateUI()  {
+      guard let theAnimal = animal else {
+            fatalError("Couldnt get Animal origin")
+        
+        }
+        title = theAnimal.name
+        ImageView.image = UIImage(named: theAnimal.imageNumber.description)
+        label.text = theAnimal.name
+        textView.text = theAnimal.info
+        
+        
+    }
 
 }

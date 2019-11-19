@@ -8,6 +8,8 @@
 
 import UIKit
 
+// remember when clicking that you should ONLY CLICK ONCE!!! if you click more than once then you will get the cover and will be doing basically evertything wrong...
+
 class ViewController: UIViewController {
 
     // convert to UITableView always before dragging in stuff
@@ -27,11 +29,24 @@ class ViewController: UIViewController {
         
         // confroming to the datasource .. tells it to give access to tableview: let me do what I want to do regardless of what you think
         tableview.dataSource = self
-        specificAnimals = ZooAnimal.getData()
+        //i dont get it 
+specificAnimals = ZooAnimal.getData()
     }
     
     // need to do the prepare for segue function here
-
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let zad = segue.destination as? ZooAnimalDetails,
+                let indexPath = tableview.indexPathForSelectedRow else {
+                return
+                    //fatalError("prepare for segue failed.")
+            }
+            zad.animal = specificAnimals[indexPath.section][indexPath.row]
+                //didSetAnimal[indexPath.section][indexPath.row]
+                 
+                 print("preparForSegue")
+    return
+    }
+  
 }
 
 // UITableViewDelegate need this because ... cosmetic stuff.. sections and title are for delegate
