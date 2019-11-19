@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         // confroming to the datasource .. tells it to give access to tableview: let me do what I want to do regardless of what you think
         tableview.dataSource = self
-     //   animals = ZooAnimal.zooAnimals
+        specificAnimals = ZooAnimal.getData()
     }
     
     // need to do the prepare for segue function here
@@ -60,6 +60,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    //section funcs
     func numberOfSections(in tableView: UITableView) -> Int {
         return specificAnimals.count
     }
@@ -69,7 +70,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+          return 200
+      }
     
     
 }

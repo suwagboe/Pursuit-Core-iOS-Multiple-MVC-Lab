@@ -16,10 +16,10 @@ class AnimalCell: UITableViewCell {
     
     
     // what is this for .. to allow for each element to be accessed and assign the variables to each one
-    func configureCell(for zooanimal: ZooAnimal) {
-        AnimalImage.image = UIImage(named: "\(zooanimal.imageNumber)")
-        animalNameLabel.text = zooanimal.name
-        animalOriginLabel.text = zooanimal.origin
+    func configureCell(for zooanimals: ZooAnimal) {
+        AnimalImage.image = UIImage(named: zooanimals.imageNumber.description)
+        animalNameLabel.text = zooanimals.name
+        animalOriginLabel.text = zooanimals.origin
     }
     
     
